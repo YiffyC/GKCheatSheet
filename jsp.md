@@ -1,12 +1,45 @@
 ## JSP - Java Server Page
 
+
+
+[TOC]
+
+
+
 ------
+
+##### <u>Résumé</u>
 
 - Composant java
 - Executé côté serveur
 - Nécessite un serveur qui implémente le composant
 - Est dynamioque
 - Code dans /WebContent/
+
+------
+
+##### <u>Integration Java</u>
+
+Intégrer du code java dans du HTML :
+
+```Html
+<!-- Sans affichage -->
+<% /%>
+
+<!-- Avec affichage -->
+<%= %>
+    
+ <!-- import -->
+ <%@page import="truc"%>
+```
+
+
+
+------
+
+##### <u>Exemple</u>
+
+Exemple de JSP
 
 ```Html
 <%@page import="java.util.Date"%>
@@ -34,6 +67,8 @@
 
 ------
 
+##### <u>Lien avec Servlet</u>
+
 Exemple de lien avec un servlet:
 
 ```Html
@@ -57,7 +92,6 @@ Exemple de lien avec un servlet:
 		<tr>
 			<td><b>Mdp :</b></td>		<td><input type="password" name="mdp"></td>
 		</tr>
-	
 		</table>
 	<input type="reset" value="raz">
 	<input type="submit" value=":)" >

@@ -1,12 +1,24 @@
 ## Servlet 
 
+
+
+[TOC]
+
+
+
 ------
+
+##### Résumé
 
 - Conteneur web
 - Les servlets sont éxécutés côté serveur.
 - Non visible si pas compilé
 - Code dans /src/
 - Réponds à la requête du client
+
+------
+
+##### <u>Servlet classique :</u>
 
 ```java
 @WebServlet("/MonServlet")
@@ -44,6 +56,8 @@ public class MonServlet extends HttpServlet {
 
 ------
 
+##### <u>Récupération d'informations d'un formulaire</u>
+
 Implémentation de la méthode *faire()* qui récupère les élémenyts du formulaire ainsi que les valeurs associées :
 
 ```java
@@ -66,7 +80,7 @@ private void faire(HttpServletRequest request, HttpServletResponse response)
 
 ------
 
-Redirection vers une url : 
+##### <u>Redirection vers une url</u> 
 
 ```java
 public void redirection(String url, HttpServletResponse response) throws IOException
@@ -78,4 +92,44 @@ public void redirection(String url, HttpServletResponse response) throws IOExcep
 
 
 ------
+
+##### <u>Chaînage de Servlets</u>
+
+Utilisation des chainages plutot que la redirection dans la pratique pour garder la logique métier. Pour se faire, il faut utiliser le *requestDispatcher* 
+
+
+
+Servlet1 appelant Servlet2 par inclusion:
+
+```Java
+void service(HttpServletRequest request, HttpServletResponse response)
+{
+    /*
+    * traitement
+    */
+    
+    ServletContext sc = getServletConfig().getServletContext();
+    RequestDispatcher rd = sc.getRequestDispatcher("/Servlet2");
+    rd.include(request, response);
+    //suite des traitements
+}
+```
+
+
+
+Servlet1 appelant Servlet2 par délegation:
+
+```java
+void service(HttpServletRequest request, HttpServletResponse response)
+{
+    /*
+    * traitement
+    */
+    
+    ServletContext sc = getServletConfig().getServletContext();
+    RequestDispatcher rd = sc.getRequestDispatcher("/Servlet2");
+    rd.forward(request, response);
+    //aucun traitement pour répondre à l'utisateur, le servlet2 l'a fait
+}
+```
 
