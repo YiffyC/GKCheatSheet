@@ -8,7 +8,7 @@
 
 ------
 
-##### Résumé
+##### <u>Résumé</u>
 
 - Conteneur web
 - Les servlets sont éxécutés côté serveur.
@@ -158,4 +158,48 @@ HttpSession maSession = getSession(false);
 ##### <u>Principes de conception</u>
 
 ![mvc](/Users/Berenger/Documents/GitKraken/GKCheatSheet/images/mvc.png)
+
+
+
+------
+
+##### <u>Liaison Servlet-Bean-JSP</u>
+
+Initialisation du bean dans le servlet. Remplissage du bean avec les données du JSP, puis affichage des résultats dans un autre JSP.
+
+Servlet :
+
+```Java
+//récupération/création d'une session
+HttpSession session = request.getSession();
+//init du bean
+InformationBean bean = new InformationBean();
+//traitement sur le bean
+bean.setNom(request.getParameter("nom"));
+//transfert du bean dans la session
+session.setAttribute("bean", bean);	
+//redirection vers la page d'affichage des resultats
+RequestDispatcher rd = request.getRequestDispatcher("/resultat.jsp");
+rd.forward(request, response);
+```
+
+JSP source :
+
+```Html
+<!-- Appel du servlet précédent dans la pethode post -->
+<form name="identificationForm" method="post" action="MonServlet">
+```
+
+JSP destination :
+
+```Html
+<!-- import du bean -->
+<%@page import="beans.InformationBean"%>
+
+    <!-- Instanciation locale du bean avec la valeur du bean de la session (nom passé en paramètre de session.setAttribute("nom", objet)) puis affichage de la valeur -->
+	<%
+      	InformationBean bean = (InformationBean)session.getAttribute("bean");
+		out.println(bean.getNom());
+	%>
+```
 
