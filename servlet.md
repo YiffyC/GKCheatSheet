@@ -42,6 +42,8 @@ public class MonServlet extends HttpServlet {
 
 *doGet()* et *doPost()* ne sont pas utilisées en même temps mais corresponent à l'utilisation ou non du cache.
 
+------
+
 Implémentation de la méthode *faire()* qui récupère les élémenyts du formulaire ainsi que les valeurs associées :
 
 ```java
@@ -59,4 +61,21 @@ private void faire(HttpServletRequest request, HttpServletResponse response)
 
 	}
 ```
+
+
+
+------
+
+Redirection vers une url : 
+
+```java
+public void redirection(String url, HttpServletResponse response) throws IOException
+	{
+		response.sendRedirect(url);
+	}
+```
+
+
+
+------
 
