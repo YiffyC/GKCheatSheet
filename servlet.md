@@ -133,3 +133,29 @@ void service(HttpServletRequest request, HttpServletResponse response)
 }
 ```
 
+------
+
+##### <u>Sessions</u>
+
+Petmettent un maintien d'état entre les requêtes d'un même utilisateur. Chaque session à son propre identifiant et elles sont gérées par un cookie. Deux possibilité de fin : timeout ou déconnexoin. (Ex p.127)
+
+Obtention d'une session:
+
+```java
+//la première fois
+HttpSession maSession = req.getSession(true);
+
+//les fois suivantes, la session étant créée
+HttpSession maSession = req.getSession();
+	//ou
+HttpSession maSession = getSession(false);
+```
+
+
+
+------
+
+##### <u>Principes de conception</u>
+
+![mvc](/Users/Berenger/Documents/GitKraken/GKCheatSheet/images/mvc.png)
+
