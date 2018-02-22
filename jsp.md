@@ -15,6 +15,7 @@
 - Nécessite un serveur qui implémente le composant
 - Est dynamioque
 - Code dans /WebContent/
+- Pas de code métier
 
 ------
 
@@ -22,12 +23,15 @@
 
 Intégrer du code java dans du HTML :
 
-```Html
+```jsp
 <!-- Sans affichage -->
 <% /%>
 
 <!-- Avec affichage -->
 <%= %>
+    
+ <!-- include -->
+ <%@ include file="filename.ext" %>
     
  <!-- import -->
  <%@page import="truc"%>
@@ -41,7 +45,7 @@ Intégrer du code java dans du HTML :
 
 Exemple de JSP
 
-```Html
+```jsp
 <%@page import="java.util.Date"%>
 <%@page import="java.text.SimpleDateFormat"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
@@ -71,7 +75,7 @@ Exemple de JSP
 
 Exemple de lien avec un servlet:
 
-```Html
+```jsp
 <%@page import="servlet.MonServlet"%>
 <%@page import="java.text.SimpleDateFormat"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
@@ -102,4 +106,20 @@ Exemple de lien avec un servlet:
 ```
 
 ------
+
+##### <u>Balise Usebean</u>
+
+Prérequis : 
+
+- Déclarer un bean dans le servlet contôleur (*setAttribute(String, Object)*)
+- Utiliser les balises usebean dans le JSP
+
+```Jsp
+<!-- creation du bean en local -->
+<jsp:usebean id="maPersonne" class="monBean"></jsp:usebean>
+
+<!-- get et set du bean -->
+<jsp:getProperty property="nomPropriété" name="nomBean" />
+<jsp:setProperty property="nomPropriété" value="Alexandra" name="nomBean" />
+```
 
