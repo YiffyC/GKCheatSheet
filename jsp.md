@@ -123,3 +123,19 @@ Prérequis :
 <jsp:setProperty property="nomPropriété" value="Alexandra" name="nomBean" />
 ```
 
+
+
+------
+
+##### <u>Déconnexion</u>
+
+Pour se déconnecter il faut invalider la session
+
+```Java
+session.invalidate();
+```
+
+
+
+------
+
