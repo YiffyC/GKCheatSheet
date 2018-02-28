@@ -217,3 +217,19 @@ ApplicationContext ctx = new ClassPathXmlApplicationContext("application-context
 
 ------
 
+##### <u>Démarrer appli web</u>
+
+```Xml
+<context-param>
+	<param-name>ContextConfigLocalisation</param-name>
+	<param-value>classpath:META-INF/spring/application-context.xml</param-value>
+</context-param>
+<listener>
+	<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+</listener>
+```
+
+—>Cette configuration lance uniquement Spring IoC, elle ne lance pas Spring MVC
+
+------
+
