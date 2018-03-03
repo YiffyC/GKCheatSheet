@@ -233,3 +233,39 @@ ApplicationContext ctx = new ClassPathXmlApplicationContext("application-context
 
 ------
 
+##### **<u>Inner Bean</u>**
+
+Même principe que les inner class en Java. Il est déclaré à l'intérieur qu'un auytte bean. Il est injecté dans le ce deuxième bean. Seul ce deuxième bean peut le voir. Cela clarifie la configuration. Pas de limite, on peut faire des inner beans de inner beans...
+
+
+
+```xml
+<bean id="beanA" classe="example.BeanA">
+	<property name = "beanB">
+    	<bean class = "example.BeanB">
+            <property name = "prop1" value = "jdjdjd" />
+            <property name = "prop2" value = "jfjfjfjf" />
+        </bean>
+    </property>
+</bean>
+```
+
+------
+
+##### <u>Class anonyme</u>
+
+```Java
+jdbcTemplate.querry(
+	"select id, user_id, balance from account",
+    new ParametrizedRowMapper<Account>()
+    {
+        public Account mapRow(ResultSet rs, int i) throws SQLException
+        {
+            return new Account(rs.getLong("id"), rs.getInt("user_id"), rs.getInt("balance"));
+        }
+    }
+);
+```
+
+------
+
