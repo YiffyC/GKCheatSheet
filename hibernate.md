@@ -73,13 +73,16 @@ Exemple:
 @Entity
 public class Book
 {
+    //@Id = indicateur de clef primaire
+    //@GeneratedValue = valeur auto-générée
     @Id @GeneratedValue
     private Long id;
     
+    //Equivalent du NOT NULL en SQL
     @Column (nullable = false)
     private String title;
     private Float price;
-    
+   
     @Column (length = 2000)
     private String description;
     private String isbn;
@@ -107,15 +110,25 @@ Permet de définir les propriétés
 - Clé composite : *@EmbeddedId* ou *@IdClass* <— pas recommandé
 - Génération automatique de la clé : *@GeneratedValue*
 
+------
 
+##### <u>Association</u>
 
-Ex annotation OneByOne
+- Cardinalité :1-1, 1-n, n-n… ex : *@OneToOne*
+- 2 dirrections pour les relations : uni ou bi directionnelles.
 
-```java
-@OneToOne(mappedBy = "shippement")
-piublic Order getOrder()
+Ex annotation OneByOne :
+
+```Java
+public class Person implements Serializable
 {
-    return order;
+	//...
+	
+	//Une personne est liée à un évenement
+	@OneToOne
+	private Event event;
+	
+	//...
 }
 ```
 
@@ -123,10 +136,38 @@ piublic Order getOrder()
 
 ------
 
-##### <u>Association</u>
+##### <u>Obtention session</u>
 
-- Cardinalité :1-1, 1-n, n-n… ex : *@OneToOne*
-- 2 dirrections pour les relations : uni ou bi directionnelles.
+```Java
+session = HibernateUtil.getSessionFactory().openSession();
+transaction = session.getTransaction();
+transaction.begin();
+```
+
+------
+
+##### <u>Création personne + stockage en base</u>
+
+```Java
+private void createAndStorePerson(Long i, String firstname, String lastname, int age, Session session)
+{
+
+		Person person = new Person();
+		
+    	//valeurs
+		person.setId(i);
+		person.setFirstname(firstname);
+		person.setLastname(lastname);
+		person.setAge(age);
+		person.setEvent(e);
+    
+    	//sauvegarde en base (avec écrasement en cas de doublon)
+		session.saveOrUpdate(person);
+
+		System.out.println(person);
+		
+}
+```
 
 ------
 
