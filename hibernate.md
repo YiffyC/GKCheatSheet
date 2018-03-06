@@ -99,3 +99,34 @@ public class Book
 
 ------
 
+##### <u>Annotations</u>
+
+Permet de définir les propriétés
+
+- Clé primaire : *@Id*
+- Clé composite : *@EmbeddedId* ou *@IdClass* <— pas recommandé
+- Génération automatique de la clé : *@GeneratedValue*
+
+
+
+Ex annotation OneByOne
+
+```java
+@OneToOne(mappedBy = "shippement")
+piublic Order getOrder()
+{
+    return order;
+}
+```
+
+
+
+------
+
+##### <u>Association</u>
+
+- Cardinalité :1-1, 1-n, n-n… ex : *@OneToOne*
+- 2 dirrections pour les relations : uni ou bi directionnelles.
+
+------
+
