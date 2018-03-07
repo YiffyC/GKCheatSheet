@@ -177,7 +177,11 @@ private void createAndStorePerson(Long i, String firstname, String lastname, int
 
 Le piège classique. On ne peut pas supprimer une relation si elle est partagée par un autre objet.
 
-Ex: Personne a une collection d'adresses (relation 1-n). Si une de ces adresses est aussi en relation avec une autre personne il y aura une erreur.
+Ex: Personne a une collection d'adresses (relation 1-n). Si une de ces adresses est aussi en relation avec une autre personne il y aura une erreur. Il faut d'abbord tuer les enfants avant de s'occuper des parents.
 
 ------
+
+##### <u>*Eager* ou *Lazy*?</u>
+
+Par défaut JPA ne récupère que les entités associées par des associations dont le but est "one" : OneToMany et ManyToOne = *lazy*. Pour les associations dont le but est "many", *eager* va tout retourner. 
 
