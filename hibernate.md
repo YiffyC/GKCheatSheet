@@ -185,3 +185,5 @@ Ex: Personne a une collection d'adresses (relation 1-n). Si une de ces adresses 
 
 Par défaut JPA ne récupère que les entités associées par des associations dont le but est "one" : OneToMany et ManyToOne = *lazy*. Pour les associations dont le but est "many", *eager* va tout retourner. 
 
+------
+
