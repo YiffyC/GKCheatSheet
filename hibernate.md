@@ -109,6 +109,8 @@ Permet de définir les propriétés
 - Clé primaire : *@Id*
 - Clé composite : *@EmbeddedId* ou *@IdClass* <— pas recommandé
 - Génération automatique de la clé : *@GeneratedValue*
+- Orderby *@OrderBy* existe, à éviter cependant
+- ​
 
 ------
 
@@ -168,6 +170,14 @@ private void createAndStorePerson(Long i, String firstname, String lastname, int
 		
 }
 ```
+
+------
+
+##### <u>Suppression</u>
+
+Le piège classique. On ne peut pas supprimer une relation si elle est partagée par un autre objet.
+
+Ex: Personne a une collection d'adresses (relation 1-n). Si une de ces adresses est aussi en relation avec une autre personne il y aura une erreur.
 
 ------
 
