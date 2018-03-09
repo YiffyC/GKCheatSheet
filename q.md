@@ -1,0 +1,7 @@
+- Préparation CV
+- E learning en télétravail? Contenu du learning?
+- Forum techniques
+- Comment se passe l'intégration/le premier mois?
+- Télétravail? Quand? Pour qui?
+- Que faire pendant l'inter contrat?
+- ​

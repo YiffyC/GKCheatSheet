@@ -187,3 +187,33 @@ Par défaut JPA ne récupère que les entités associées par des associations d
 
 ------
 
+##### <u>Hibernate vs JPA</u>
+
+```Java
+//hibernate
+saveOrUpdate();
+
+//JPA
+entityManager.persits(Object)
+```
+
+------
+
+##### <u>Objet détaché</u>
+
+Objet qui n'intervient pas dans le contexte de persistance. Objet inconnu du contexte. (Ex. Objet sans id )
+
+------
+
+##### <u>percistance.xml</u>
+
+Fichier de configuration, qui permet des déclaration de paramètres dont on a besoin pour dialoguer avec la base de données. Il permet aussi de créer la session.
+
+------
+
+##### <u>Transactions</u>
+
+Enclance le mode transactionnel. Assure la cohérence du modèle. Si transaction : ok commit si ko : rollback.
+
+------
+
