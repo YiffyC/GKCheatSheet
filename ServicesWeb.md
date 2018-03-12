@@ -145,3 +145,57 @@ l’authentification, et le chiffrement des données qui transitent entre des se
 
 ------
 
+##### <u>XML</u>
+
+*(eXtended Markup Language)*
+
+C'est un métalangage informatique de balisage générique. Sa syntaxe est dite « extensible » car elle permet de définir différents espaces de noms, c'est-à-dire des langages avec chacun leur vocabulaire et leur grammaire. Elle est reconnaissable par son usage des chevrons encadrant les noms des balises. L'objectif initial de XML est de faciliter l'échange automatisé de contenus complexes (arbres, texte riche…) entre systèmes d'informations hétérogènes.
+
+Exemple de code :
+
+```Xml
+<note>
+    <to>Tove</to>
+    <from>Jani</from>
+    <heading>Reminder</heading>
+    <body>Don't forget me this weekend!</body>
+</note>
+```
+
+
+
+------
+
+##### <u>DTD</u>
+
+La DTD *(document type definition)*, ou définition de type de document, est, soit un fichier, soit une partie d'un document SGML ou XML, qui décrit ce document ou une classe de documents.
+
+Exemple de code (programme TV)
+
+```Dtd
+<!DOCTYPE TVSCHEDULE [
+
+<!ELEMENT TVSCHEDULE (CHANNEL+)>
+<!ELEMENT CHANNEL (BANNER,DAY+)>
+<!ELEMENT BANNER (#PCDATA)>
+<!ELEMENT DAY (DATE,(HOLIDAY|PROGRAMSLOT+)+)>
+<!ELEMENT HOLIDAY (#PCDATA)>
+<!ELEMENT DATE (#PCDATA)>
+<!ELEMENT PROGRAMSLOT (TIME,TITLE,DESCRIPTION?)>
+<!ELEMENT TIME (#PCDATA)>
+<!ELEMENT TITLE (#PCDATA)> 
+<!ELEMENT DESCRIPTION (#PCDATA)>
+
+<!ATTLIST TVSCHEDULE NAME CDATA #REQUIRED>
+<!ATTLIST CHANNEL CHAN CDATA #REQUIRED>
+<!ATTLIST PROGRAMSLOT VTR CDATA #IMPLIED>
+<!ATTLIST TITLE RATING CDATA #IMPLIED>
+<!ATTLIST TITLE LANGUAGE CDATA #IMPLIED>
+]> 
+<!-- #PCDATA  = Donnée alpha numérique -->
+<!-- !ELEMENT nom valeur -->
+<!-- !ATTLIST nom attribut type défaut -->
+```
+
+------
+
