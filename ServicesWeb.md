@@ -138,3 +138,10 @@ Get : Paramètres dans l'url. Methode par défaut.
 
 ------
 
+##### <u>SSL & TLS</u>
+
+SSL *(Secure Socket Layer)* et TLS  *(Transport Layer Security)* sont deux protocoles cryptographiques qui permettent 
+l’authentification, et le chiffrement des données qui transitent entre des serveurs, des machines et des applications en réseau (notamment lorsqu’un client se connecte à un serveur Web). Le SSL est le prédécesseur du TLS. Au fil du temps, de nouvelles versions de ces protocoles ont vu le jour pour faire face aux vulnérabilités et prendre en charge des suites et des algorithmes de chiffrement toujours plus forts, toujours plus sécurisés.
+
+------
+
