@@ -19,7 +19,7 @@
 Un service est un composant logiciel *distribué*, exposant les fonctionnalités à forte valeur ajoutée d'un dommaine métier. Le service peut être carractérisé par 8 aspects:
 
 - Contrat standardisé
-- <u>Couplage faible (= passage par une interface —> pas d'accès dirrect aux classes métier )</u>
+- Couplage faible
 - Abstraction
 - Réutilisabilité
 - Autonomie
@@ -34,3 +34,10 @@ Contrat Standardisé: Entre le consommateur et le fournisseur de données. Il es
 - La Syntaxe (*ex: attends un entier*)
 - La sémantique (= définition des règles (*ex: Nombre de compte pas négatif*))
 - La qualité du service (temps de réponse, tolérence aux pannes)
+
+
+
+Couplage faible :
+
+Echange de messages et passage par une interface —> pas d'accès dirrect aux classes métier
+
