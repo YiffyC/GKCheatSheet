@@ -69,3 +69,9 @@ Doit fonctionner de façon modulaire et non pas intégrée. Décompose un systè
 
 ------
 
+##### <u>Services web</u> 
+
+Sont basés sur les langages et protocoles web HTTP, XML, TCP/IP qui ne nécéssitent pas de configuration particulière. Ils possèdent un contrat de fonctionnement qui content les informations nécessaires à leuur fonctionnement.
+
+------
+
