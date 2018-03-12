@@ -116,3 +116,11 @@ URL et URN sont des sous classes de URI
 
 Exemple d'URL : http://www.google.com ; file://home/documents/index.html ; ftp://host@adress/dir
 
+------
+
+##### <u>MIME</u>
+
+Multipurpose Internet Mail Extensions. Standard internet qui étend le format de données des courriels pour supporter des textes en différents codage de caractères autres que l'ASCII, des contenus non textuels, des contenus multiples, et des informations d'en-tête en d'autres codages que l'ASCII.
+
+------
+
