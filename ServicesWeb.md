@@ -256,7 +256,43 @@ Cons :
 
 
 
-SOAP *(Simple Object Access Protocol)* : protocole de communication basé sur le language XML
+SOAP *(Simple Object Access Protocol)* : protocole de communication basé sur le language XML.
+
+Concept des messages SOAP : Utilisés pour envoyer et recevoir. Il peut êytre transmis à plusieurs intermediares avant d'atteindre le destinataire final. Il est véhiculé via un protocole de transfert.
+
+
+
+Exemple:
+
+Message soap pour appeler l'opération HelloWorld contenant un paramètre:
+
+```xml
+<soapenv:Enveloppe
+                   xlmns:soapenv="http://schemas.xmlsoap.org/soap/envelope"
+                   xlmns:hel="http://helloworldwebservice.lisi.ensma.fr" >
+	<soapenv:Header />
+    <soapenv:Body>
+        <hel:makeHelloWorld>
+        	<value>Bonjour</value>
+        </hel:makeHelloWorld>
+    </soapenv:Body>
+</soapenv:Enveloppe>
+```
+
+
+
+Message SOAP pour appeler l'operation simpleHelloWorldne qui ne contient pas le paramètre : 
+
+```xml
+<soapenv:Enveloppe
+                   xlmns:soapenv="http://schemas.xmlsoap.org/soap/envelope"
+                   xlmns:hel="http://helloworldwebservice.lisi.ensma.fr" >
+	<soapenv:Header />
+    <soapenv:Body>
+        <hel:simpleHelloWorld />
+    </soapenv:Body>
+</soapenv:Enveloppe>
+```
 
 ------
 
