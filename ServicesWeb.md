@@ -219,3 +219,23 @@ On peut définir des namespaces pour s'en servir plus tard ex:
 
 ------
 
+##### <u>Norme traitement de cocument</u>
+
+JAX-Processing
+
+- Java.xml.parser
+- Java.xml.transform
+
+JAX-Binding
+
+- représentation d'objet Java en XML (serialization, deserialization)
+
+------
+
+##### <u>DOM</u>
+
+Document Object Model. Représentation en arbre de documents.
+
+Exemple de représentation dom avec exemple de spath :
+
+![Sans titre-1](/Users/Berenger/Documents/GitKraken/GKCheatSheet/images/Sans titre-1.png)
