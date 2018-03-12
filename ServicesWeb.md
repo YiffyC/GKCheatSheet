@@ -66,3 +66,6 @@ Sans état : garantie plus de performance. Autonomie = prédicabilité
 Composabilité : 
 
 Doit fonctionner de façon modulaire et non pas intégrée. Décompose un système complexe. S'inscrit dans une logique de compsition de services. 
+
+------
+
