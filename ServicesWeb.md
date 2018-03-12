@@ -84,3 +84,10 @@ Sont basés sur les langages et protocoles web HTTP, XML, TCP/IP qui ne nécéss
 
 ##### <u>Services web REST</u>
 
+Exploités pour les architectures orientées données (DOA). Rest n'est pas un standard. REST est un style d'architecture basé sur un mode de compréhension du web. Rest s'appuie sur les standards du web : 
+
+- Protocole HTTP
+- URLs
+- Formats de fichiers
+- Sécurité via SSL
+
