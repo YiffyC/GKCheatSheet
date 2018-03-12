@@ -239,3 +239,24 @@ Document Object Model. Représentation en arbre de documents.
 Exemple de représentation dom avec exemple de spath :
 
 ![Sans titre-1](/Users/Berenger/Documents/GitKraken/GKCheatSheet/images/Sans titre-1.png)
+
+------
+
+##### <u>SOAP : généralités</u>
+
+Pros : 
+
+- Utile pour débugger une appli
+- Utile pour réaliser des tests via SOAP UI
+- Intersepter des messages bas niveau
+
+Cons : 
+
+- APIs fourinissent une abstraction des messages SOAP
+
+
+
+SOAP *(Simple Object Access Protocol)* : protocole de communication basé sur le language XML
+
+------
+
