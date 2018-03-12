@@ -155,10 +155,10 @@ Exemple de code :
 
 ```Xml
 <note>
-    <to>Tove</to>
-    <from>Jani</from>
+    <to>You</to>
+    <from>Me</from>
     <heading>Reminder</heading>
-    <body>Don't forget me this weekend!</body>
+    <body>Don't forget about XML</body>
 </note>
 ```
 
