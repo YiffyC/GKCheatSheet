@@ -104,3 +104,11 @@ La pluspart des plateformes de dev suppoertent les webservices (.NET, Java, PHP,
 
 ------
 
+##### <u>Protocoles internet</u>
+
+URI : (Uniform Ressource Identifier) Mécanisme permettant aux utilisateurs et aux programmes de localiser des ressources web. L'URI est utilisé par HTTP, FTP, namespaces, XML, SMIL (Synchronized Multimedia Integration Language), SVG (Scalable Vector Graphic).
+
+URL et URN sont des sous classes de URI
+
+URL : http://www.google.com ; file://home/documents/index.html ; ftp://host@adress/dir
+
