@@ -23,13 +23,15 @@ Un service est un composant logiciel *distribué*, exposant les fonctionnalités
 - Abstraction
 - Réutilisabilité
 - Autonomie
-- <u>Sans état (= pas de session *(Ex: pas de panier comem sur site de commerce)*)</u>
+- Sans état
 - Découvrabilité
 - Composabilité
 
 
 
-Contrat Standardisé: Entre le consommateur et le fournisseur de données. Il est lié à :
+Contrat Standardisé : 
+
+Entre le consommateur et le fournisseur de données. Il est lié à :
 
 - La Syntaxe (*ex: attends un entier*)
 - La sémantique (= définition des règles (*ex: Nombre de compte pas négatif*))
@@ -43,11 +45,22 @@ Echange de messages et passage par une interface —> pas d'accès dirrect aux c
 
 
 
-Abstraction:
+Abstraction :
 
 Le contract ne dois contenir que les infos pertinentes. Fonctionne en "boite noire" : le fonctionnement ne dois pas être visible. Pas de variation dans le comportement du service.
 
 
 
-Réutilisabilité:
+Réutilisabilité *(peu utilisé en vrai)* :
 
+Service accessible depuis un annuaire. le fournisseur doit déposer et mettre à jour le service. Utilise les standards (UDDI, ebXML) 
+
+
+
+Autonome/sans état:
+
+Sans état : garantie plus de performance. Autonomie = prédicabilité
+
+
+
+Composabilité
