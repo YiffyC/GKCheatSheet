@@ -242,7 +242,7 @@ Exemple de représentation dom avec exemple de spath :
 
 ------
 
-##### <u>SOAP : généralités</u>
+##### <u>SOAP : généralités + exemple de code</u>
 
 Pros : 
 
