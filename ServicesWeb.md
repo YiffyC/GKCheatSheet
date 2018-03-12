@@ -199,3 +199,23 @@ Exemple de code (programme TV)
 
 ------
 
+##### <u>Namespace</u>
+
+Les namespaces désignent un lieu abstrait conçu pour accueillir des ensembles de termes appartenant à un même répertoire. Ils peuvent permettre d'utiliser plusieurs DTD au sein d'un même document. (Peu de chance d'en manipuler)
+
+Dans l'exemple ci dessous context est ne namespace.
+
+```Xml
+<context:composant-scan>
+```
+
+On peut définir des namespaces pour s'en servir plus tard ex:
+
+```Xml
+<beans xmlns:ct="http://adresse">
+	<ct:composant-scan base-package="package.name" />
+</beans>
+```
+
+------
+
