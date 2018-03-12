@@ -132,5 +132,9 @@ Utilise un jeu de requêtes/réponses entre un client et un serveur. La communic
 - Une passerelle
 - Un tunnel
 
+Post : Pas d'info dans l'url, prends en compte une taille de données plus importante.
+
+Get : Paramètres dans l'url. Methode par défaut.
+
 ------
 
