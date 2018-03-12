@@ -41,3 +41,13 @@ Couplage faible :
 
 Echange de messages et passage par une interface —> pas d'accès dirrect aux classes métier
 
+
+
+Abstraction:
+
+Le contract ne dois contenir que les infos pertinentes. Fonctionne en "boite noire" : le fonctionnement ne dois pas être visible. Pas de variation dans le comportement du service.
+
+
+
+Réutilisabilité:
+
