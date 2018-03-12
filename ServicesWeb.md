@@ -311,3 +311,5 @@ Basé sur XML et fournit une description indépendante du langage de la platefor
 - Port : Point d'accès du service
 - Opération : description d'une action proposée dans le port
 
+------
+
