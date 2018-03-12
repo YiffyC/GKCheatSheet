@@ -124,3 +124,11 @@ Multipurpose Internet Mail Extensions. Standard internet qui étend le format de
 
 ------
 
+##### <u>HTTP1.1</u>
+
+Utilise un jeu de requêtes/réponses entre un client et un serveur. La communication peut être dirrecte mais elle peu aussi passer par :
+
+- Un proxy
+- Une passerelle
+- Un tunnel
+
