@@ -14,8 +14,8 @@
 | Mathilde  |     Guemtum      | 07 80 09 56 81 |  [guemtummathilde@yahoo.fr]()   |
 |   Marwa   |     Khablech     | 06 01 39 71 99 |    khablash.marwa@gmail.com     |
 | Zoniaina  | Rakotoharisendra | 06 67 55 38 48 |   zoniaina.rakotoh@gmail.com    |
-|  Karima   |                  | 06 50 45 41 95 |                                 |
-|           |                  |                |                                 |
-|           |                  |                |                                 |
+|  Karima   |      Aiboud      | 06 50 45 41 95 |   [Aiboud_karima@yahoo.fr]()    |
+| Abdelnaim |      Cherfi      | 07 62 28 47 38 |     Abdou.cherfi@gmail.com      |
+|  Naouel   |     Kachour      | 06 77 33 32 90 |     [naouelk@hotmail.fr]()      |
 |           |                  |                |                                 |
 
