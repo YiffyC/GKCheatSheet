@@ -298,7 +298,7 @@ Message SOAP pour appeler l'operation simpleHelloWorldne qui ne contient pas le 
 
 ------
 
-##### <u>WSDL : Généralités</u>
+##### <u>WSDL : Généralités + exemple</u>
 
 Web Service Description Language
 
@@ -307,9 +307,33 @@ Basé sur XML et fournit une description indépendante du langage de la platefor
 - Types : Définition des types de données
 - Messages : Definition abstraite des données en cours de transmission
 - PortType : Ensemble d'opérations. Chaque opération peut avoir 0 ou 1 message en entrée et 0 ou n en sortie (ou erreur)
-- Binding : Liaisoon entre PortType et un protocole concret (SOAP, HTTP...)
+- Binding : Liaisoon entre PortType et un protocole concret (SOAP, HTTP…) (génrés automatiquement par les outils.)
 - Port : Point d'accès du service
 - Opération : description d'une action proposée dans le port
+
+```xml
+
+<message name="getTermRequest">
+  <part name="term" type="xs:string"/>
+</message>
+
+<message name="getTermResponse">
+  <part name="value" type="xs:string"/>
+</message>
+
+<portType name="glossaryTerms">
+  <operation name="getTerm">
+    <input message="getTermRequest"/>
+    <output message="getTermResponse"/>
+  </operation>
+</portType> 
+
+<!-- n this example the <portType> element defines "glossaryTerms" as the name of a port, and "getTerm" as the name of an operation.
+The "getTerm" operation has an input message called "getTermRequest" and an output message called "getTermResponse".
+The <message> elements define the parts of each message and the associated data types. -->
+```
+
+
 
 ------
 
