@@ -258,9 +258,11 @@ Cons :
 
 SOAP *(Simple Object Access Protocol)* : protocole de communication basé sur le language XML.
 
-Concept des messages SOAP : Utilisés pour envoyer et recevoir. Il peut êytre transmis à plusieurs intermediares avant d'atteindre le destinataire final. Il est véhiculé via un protocole de transfert.
+Concept des messages SOAP : Utilisés pour envoyer et recevoir. Il peut êytre transmis à plusieurs intermediares avant d'atteindre le destinataire final. Il est véhiculé via un protocole de transfert (dans la palupart des cas: HTTP).
 
+<u>En-tête</u> (Header) : Contient les infos pour authentifier l'émetteur, contextualise la transaction, peut permettre d'identifier l'émetteur.
 
+<u>Corps</u> (body): Il contient le message pour le destinataier ou une erreur.
 
 Exemple:
 
