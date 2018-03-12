@@ -16,7 +16,7 @@
 
 ##### <u>Service</u>
 
-Un service est un composant logiciel *distribué*, exposant les fonctionnalités à forte valeur ajoutée d'un dommaine métier. Le service peut être carractérisé par 8 aspects:
+Un service est un composant logiciel *distribué*, exposant les fonctionnalités à forte valeur ajoutée d'un dommaine métier. Ils sont basés sur les langages et protocoles web HTTP, XML, TCP/IP qui ne nécéssitent pas de configuration particulière. Ils possèdent un contrat de fonctionnement qui content les informations nécessaires à leuur fonctionnement. Le service peut être carractérisé par 8 aspects:
 
 - Contrat standardisé
 - Couplage faible
@@ -69,12 +69,6 @@ Doit fonctionner de façon modulaire et non pas intégrée. Décompose un systè
 
 ------
 
-##### <u>Services web</u> 
-
-Sont basés sur les langages et protocoles web HTTP, XML, TCP/IP qui ne nécéssitent pas de configuration particulière. Ils possèdent un contrat de fonctionnement qui content les informations nécessaires à leuur fonctionnement.
-
-------
-
 ##### <u>Technos disponibles</u>
 
 - Webservices étendus : s'appuient sur les standards UDDI/WSDL(fichier XML de definition de service)/SOAP
@@ -90,4 +84,23 @@ Exploités pour les architectures orientées données (DOA). Rest n'est pas un s
 - URLs
 - Formats de fichiers
 - Sécurité via SSL
+
+------
+
+##### <u>Fournisseurs de service web</u>
+
+Deux types de fournisseurs:
+
+- Webservices orientés web (public)
+- Webservices entreprise (privé)
+
+Les grands noms du web (Twitter, Google, Facebook…) fournissent des webservices REST.
+
+------
+
+##### <u>Plateformes de développement</u>
+
+La pluspart des plateformes de dev suppoertent les webservices (.NET, Java, PHP, C++, Python…). ces outils permettent de manipuler des messages SOAP, de données XML, mapper du XLM/classe, accéder à la couche HTTP.
+
+------
 
