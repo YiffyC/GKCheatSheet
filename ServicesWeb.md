@@ -77,5 +77,10 @@ Sont basés sur les langages et protocoles web HTTP, XML, TCP/IP qui ne nécéss
 
 ##### <u>Technos disponibles</u>
 
-- Webservices étendus : s'appuient sur ldes standards UDDI/WSDL(fichier XML de definition de service)/SOAP
-- Webservices REST (Representationnal State Transfer) : Utilise dirrectement HTTP au lieu de passer par SOAP
+- Webservices étendus : s'appuient sur les standards UDDI/WSDL(fichier XML de definition de service)/SOAP
+- Webservices REST (Representationnal State Transfer) : Utilise dirrectement HTTP au lieu de passer par SOAP. Utilise URI pour nommer et identifier une ressource. 
+
+------
+
+##### <u>Services web REST</u>
+
