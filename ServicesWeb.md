@@ -298,3 +298,16 @@ Message SOAP pour appeler l'operation simpleHelloWorldne qui ne contient pas le 
 
 ------
 
+##### <u>WSDL : Généralités</u>
+
+Web Service Description Language
+
+Basé sur XML et fournit une description indépendante du langage de la plateforme. Les concepts du document WSDL:
+
+- Types : Définition des types de données
+- Messages : Definition abstraite des données en cours de transmission
+- PortType : Ensemble d'opérations. Chaque opération peut avoir 0 ou 1 message en entrée et 0 ou n en sortie (ou erreur)
+- Binding : Liaisoon entre PortType et un protocole concret (SOAP, HTTP...)
+- Port : Point d'accès du service
+- Opération : description d'une action proposée dans le port
+
