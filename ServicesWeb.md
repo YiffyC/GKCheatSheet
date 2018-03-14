@@ -333,7 +333,45 @@ The "getTerm" operation has an input message called "getTermRequest" and an outp
 The <message> elements define the parts of each message and the associated data types. -->
 ```
 
+------
 
+##### <u>Modifier le web service?</u>
+
+Ne pas modifier les classes (= elles peuvent être modifiées à tout moment par le fournisseur du service). Cependant, il reste possible de faire des exploitations avec des methodes différentes, mais dans notre code. 
 
 ------
+
+##### <u>Les 5 couches</u>
+
+1. Présentation
+2. Coordination
+3. Service  —> Interactions avec la DAO et/ou webservices
+4. Persistance  —> DAO
+5. Métier
+
+------
+
+##### <u>JAX-WS</u>
+
+Permet de développer simplement des webservices grâce à un ensemble d'annotations.
+
+Ex:
+
+```Java
+@WebService(serviceName="BanqueWS")
+public class BanqueService
+{
+    @WebMethod(operationName="ConversionEuroToDh")
+    public double conversion(@WebParam(name="montant")double mt)
+    {
+        return mt*11;
+    }
+    
+    @WebMethod
+    public String test()
+    {
+        return "test";
+    }
+}
+```
 
