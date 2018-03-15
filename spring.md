@@ -44,6 +44,12 @@ Schéma de conception :
 
 ------
 
+##### <u>@Component, @Repository, @Service & @Controller</u>
+
+![](/Users/Berenger/Documents/GitKraken/GKCheatSheet/images/component.png)
+
+------
+
 ##### <u>Couplage fort</u>
 
 Quand la classe A est liée à la classe B, on dit que la classe A est fortement couplée à la classe B. A ne peut fonctionner qu'en présence de B. Si une nouvelle classe B2 est créée, on est obligé de modifier dans la classe A. Le couplage fort est une mauvais pratique. 
