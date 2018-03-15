@@ -279,3 +279,23 @@ jdbcTemplate.querry(
 
 
 
+------
+
+
+
+##### <u>Persistance</u>
+
+1. Config Spring (data source)
+
+   - Hibernate : session factory
+
+   - JPA : entity manager factory
+
+     ^ DAOImpl{@AutoWired}
+
+2. CompteDAO extends ImplRepository<Compte, Integer>
+
+   - findByNom
+   - @Querry(RequeteJpa)
+
+   ​
