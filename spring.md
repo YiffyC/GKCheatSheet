@@ -38,6 +38,10 @@ Exigences du projet informatique :
 - Programmer interface et non une implémentation
 - Appli qui n'évolue pas : meurt
 
+Schéma de conception : 
+
+![conception](/Users/Berenger/Documents/GitKraken/GKCheatSheet/images/conception.png)
+
 ------
 
 ##### <u>Couplage fort</u>
