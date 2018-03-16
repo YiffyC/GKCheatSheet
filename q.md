@@ -1,7 +1,18 @@
-- Préparation CV
-- E learning en télétravail? Contenu du learning?
-- Forum techniques
-- Comment se passe l'intégration/le premier mois?
-- Télétravail? Quand? Pour qui?
-- Que faire pendant l'inter contrat?
-- ​
+1. 1
+2. 1
+3. 1
+4. 3
+5. 4
+6. 3
+7. 3
+8. 2
+9. 3
+10. 1
+11. 3
+12. 3
+13. 1
+14. -
+    1. UDDI
+    2. SOAP
+    3. WSDL
+    4. UDDI

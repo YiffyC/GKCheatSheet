@@ -78,12 +78,14 @@ Doit fonctionner de façon modulaire et non pas intégrée. Décompose un systè
 
 ##### <u>Services web REST</u>
 
-Exploités pour les architectures orientées données (DOA). Rest n'est pas un standard. REST est un style d'architecture basé sur un mode de compréhension du web. Rest s'appuie sur les standards du web : 
+(REpresentational State Transfer) Exploités pour les architectures orientées ressources(ROA = Architecture orientée donnée (DOA)). Rest n'est pas un standard. REST est un style d'architecture basé sur un mode de compréhension du web. Rest s'appuie sur les standards du web : 
 
 - Protocole HTTP
 - URLs
 - Formats de fichiers
 - Sécurité via SSL
+
+Facile à utiliser car compatible JSON qui d'accorde bien avec Javascript (+++ front)
 
 ------
 
