@@ -6,7 +6,7 @@
 
 ------
 
-#### HTML
+#### <u>HTML</u>
 
 ##### Balises
 
@@ -132,7 +132,7 @@ Formulaires
 
 
 
-#### CSS
+#### <u>CSS</u>
 
 ##### Notations
 
@@ -151,5 +151,21 @@ h1
 {
     /*Traitement appliqué à l'élément ayant pour attribut id="nomid" */
 }
+```
+
+
+
+------
+
+#### <u>JavaScript</u>
+
+##### Déclaration variables : 
+
+ /!\ non typées /!\
+
+```JavaScript
+var i = 1;
+var j = "bonjour";
+k = true; //possible mais déconseillé --> moins de portabilité
 ```
 
