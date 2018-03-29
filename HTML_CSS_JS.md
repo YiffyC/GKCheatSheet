@@ -159,13 +159,37 @@ h1
 
 #### <u>JavaScript</u>
 
+Description
+
+- Interprété
+- Non typé
+- syntaxe similaire à Java
+
+------
+
 ##### Déclaration variables : 
 
  /!\ non typées /!\
 
 ```JavaScript
 var i = 1;
-var j = "bonjour";
-k = true; //possible mais déconseillé --> moins de portabilité
+var j = "bonjour"; //variable locale
+k = true; //variable globale _/!\ Déconseillé /!\_
+```
+
+------
+
+Afficher du texte dans du HTML avec JS
+
+HTML:
+
+```Html
+<div id="afficheErreur"></div>
+```
+
+JS : 
+
+```javascript
+document.getElementByID("afficheErreur").innerHTML=("Message à afficher");
 ```
 
