@@ -16,7 +16,7 @@ Est basé sur V8. C'est une plateforme open source pour développer des applicat
 
 ------
 
-##### Callback
+##### Callback (=fonction)
 
 ```javascript
 var callback = function(error, response, body)
@@ -50,6 +50,20 @@ npm uninstall <package name>
 
 ------
 
-### ES6 & TypeScript
+### TypeScript
 
 Possibilité d'utiliser des classes, des *extends*, getters, setters, static
+
+Attribut ?
+
+```javascript
+var thing:
+{
+    name : string;
+    //ici l'attribut nickname n'est pas obligatoire à l'appel de la methode
+    nickname? : string;
+}
+```
+
+------
+
