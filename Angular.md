@@ -85,3 +85,5 @@ export class DataService()
 
 ### Angular
 
+![angularBigpicture](/Users/Berenger/Documents/GitKraken/GKCheatSheet/images/angularBigpicture.png)
+
