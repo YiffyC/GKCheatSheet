@@ -67,3 +67,21 @@ var thing:
 
 ------
 
+Décorateurs
+
+Permet d'ajouter des métadonnées
+
+```typescript
+@Injectable()
+export class DataService()
+{
+    data = [1,2,3];
+}
+```
+
+
+
+------
+
+### Angular
+
