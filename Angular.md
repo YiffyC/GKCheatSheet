@@ -14,6 +14,14 @@
 
 Est basé sur V8. C'est une plateforme open source pour développer des applications côté serveur en utilisant javascript. (= machine virtuelle de javascript = javascript côté serveur).
 
+
+
+Install : 
+
+1. Node.js
+2. Typescript -g
+3. @angular/cli -g
+
 ------
 
 ##### Callback (=fonction)
