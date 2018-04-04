@@ -54,7 +54,7 @@ npm uninstall <package name>
 
 Possibilité d'utiliser des classes, des *extends*, getters, setters, static
 
-Attribut ?
+##### Attribut ?
 
 ```javascript
 var thing:
@@ -67,7 +67,7 @@ var thing:
 
 ------
 
-Décorateurs
+##### Décorateurs
 
 Permet d'ajouter des métadonnées
 
@@ -155,4 +155,22 @@ movie="king kong";
 ------
 
 ##### Modules
+
+*ngfor
+
+```Html
+<li *ngFor='let m of movies'>
+    {{m}}
+ </li>
+```
+
+```typescript
+movies: string[] = ["Watchmen", "300", "Sucker Punch", "Man of steel"];
+```
+
+*ngif
+
+```Html
+<p *ngIf="nb<nbGold">Too small</p>
+```
 
