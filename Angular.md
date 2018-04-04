@@ -124,7 +124,7 @@ Convention de nommage:
 
 ------
 
-Binding
+##### Binding
 
 ```nginx
 /*NOM | REPRESENTATION
@@ -142,5 +142,17 @@ imageUrl : string = "nom_de_l_image.png";
 /*evenement | (event) = "statement"*/
 save(){console.log("saved")};
 <button (click)="save()"> Save </button>
+
+/*event | $event*/
+changeIt(m){this.movie=m};
+<input (input)=changeIt($event.target.value) >
+
+/*bidirectionnel | [(ngModel)] = "property"*/
+movie="king kong";
+<input [(ngModel)] = "movie" /><p>{{movie}}</p>
 ```
+
+------
+
+##### Modules
 
