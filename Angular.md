@@ -87,3 +87,60 @@ export class DataService()
 
 ![angularBigpicture](/Users/Berenger/Documents/GitKraken/GKCheatSheet/images/angularBigpicture.png)
 
+Lancer le serveur : 
+
+```Bash
+ng serve
+```
+
+
+
+------
+
+##### Component
+
+Nouveau composant : 
+
+```JavaScript
+@Component
+({
+        //metadatas
+    selector : "app-comp"
+})
+
+export class appComponent{};
+```
+
+Appel au composant dans HTML :
+
+```html
+<app-comp> </app-comp>
+```
+
+Convention de nommage:
+
+- Fichier : *<component name>*.component.ts
+- Classe: *<componentName>*.Component
+
+------
+
+Binding
+
+```nginx
+/*NOM | REPRESENTATION
+.ts
+.html*/
+
+/*//interpolation | {{expression}}*/
+name : string;
+{{name}}
+
+/*propriete/attribut/style/classe | [property] = "expression"*/
+imageUrl : string = "nom_de_l_image.png";
+<img [attr.src] = "imageUrl" />
+
+/*evenement | (event) = "statement"*/
+save(){console.log("saved")};
+<button (click)="save()"> Save </button>
+```
+
