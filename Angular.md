@@ -164,7 +164,7 @@ movie="king kong";
 
 ##### Modules
 
-*ngfor
+*ngFor
 
 ```Html
 <li *ngFor='let m of movies'>
@@ -176,9 +176,71 @@ movie="king kong";
 movies: string[] = ["Watchmen", "300", "Sucker Punch", "Man of steel"];
 ```
 
-*ngif
+*ngIf
 
 ```Html
 <p *ngIf="nb<nbGold">Too small</p>
 ```
 
+Operateur |
+
+```typescript
+name : string = "Bonjour"
+```
+
+```html
+<p> Hello {{name | uppercase}} </p>
+```
+
+------
+
+##### Injection de dépendances :
+
+- Façon d'erregister une dapendace
+- Façon de déclarer quelles dépendances sont requises
+
+Injectable : 
+
+```typescript
+@Injectable
+export class RaceService
+{
+    constructor(private _http : Http) {}
+    list()
+    {
+        return this._http.get("http://localhost:9000/races").map(res => ers.json());
+    }
+}
+```
+
+
+
+Récupérer l'injection :
+
+```typescript
+@Component
+({
+    selector: 'race-cmp',
+    providers: [provide(raceService, {useClass: fakeRaceService})],
+    template: `<strong>Race list</strong>`
+})
+
+export class RacesCmp
+{
+    constructor(private _raceService: RaceService){}
+    
+    list()
+    {
+        return this._raceService.list();
+    }
+}
+```
+
+------
+
+##### Programation réactive
+
+Libraires : *RxJava*, *<u>RxJS</u>* pour respectivement Java et JavaScript. 
+
+- S'abonner à un flux
+- Définir un listener
