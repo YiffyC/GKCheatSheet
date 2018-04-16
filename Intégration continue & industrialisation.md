@@ -26,3 +26,21 @@ Formateur : yousri affid ?
 - Réduire le risque d'erreur
 - Péréniser la procédure
 - Faciliter les tests
+
+------
+
+##### Integration continue : simplement
+
+C'est la construction du logiciel à chaque changement du code.
+
+------
+
+##### Les principes
+
+- Gestion centralisée du code source
+- Construction automatique
+- Construction auto-testante
+- Construction de courte durée
+- Environement d'intégration ISO *(de même configuration)* production 
+- Tout le monde doit être au courant de ce qu'il ce passe
+
